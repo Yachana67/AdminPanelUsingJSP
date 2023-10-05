@@ -1,0 +1,48 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+  
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+<form action="handle-product" method="post">
+
+
+<div class="container">
+  <h2>Add Product form</h2>
+  <div class="form-group">
+      
+    <div class="form-group">
+      <label for="email">Product Name</label>
+      <input type="text" class="form-control" id="name" placeholder="" name="name">
+    </div><br>
+    
+    <div class="form-group">
+      <label for="pwd">Product Description</label>
+      <input type="text" class="form-control" id="description" placeholder="" name="description">
+    </div>
+            <!-- Image Upload Field -->
+        <div class="form-group">
+            <label for="image">Product Image</label>
+            <input accept=".jpg,.png,.jpeg" type="file" class="form-control-file" id="image" name="image">
+        </div>
+    
+    <div class="form-group">
+      <label for="pwd">Product Price</label>
+      <input type="number" class="form-control" id="price" placeholder="" name="price">
+    </div>
+    <div class="container text-center">
+    
+    
+    
+    
+    <button type="submit" class="btn btn-primary">Add</button>
+  </div>
+</div>
+</form>
+</body>
+</html>
